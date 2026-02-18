@@ -186,6 +186,50 @@
           "target": "components/ui/warcraftcn/assets/textarea-bg.webp"
         }
       ]
+    },
+    {
+      "name": "avatar",
+      "type": "registry:component",
+      "title": "Warcraft Avatar",
+      "description": "A Warcraft-themed avatar component with fantasy styling",
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/ui/warcraftcn/avatar.tsx",
+          "type": "registry:component",
+          "target": "components/ui/warcraftcn/avatar.tsx"
+        },
+        {
+          "path": "components/ui/warcraftcn/styles/warcraft.css",
+          "type": "registry:component",
+          "target": "components/ui/warcraftcn/styles/warcraft.css"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/avatar-default.webp",
+          "type": "registry:file",
+          "target": "components/ui/warcraftcn/assets/avatar-default.webp"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/avatar-elf.webp",
+          "type": "registry:file",
+          "target": "components/ui/warcraftcn/assets/avatar-elf.webp"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/avatar-human.webp",
+          "type": "registry:file",
+          "target": "components/ui/warcraftcn/assets/avatar-human.webp"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/avatar-orc.webp",
+          "type": "registry:file",
+          "target": "components/ui/warcraftcn/assets/avatar-orc.webp"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/avatar-undead.webp",
+          "type": "registry:file",
+          "target": "components/ui/warcraftcn/assets/avatar-undead.webp"
+        }
+      ]
     }
   ]
 }

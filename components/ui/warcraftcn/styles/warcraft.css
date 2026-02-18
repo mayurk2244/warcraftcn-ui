@@ -56,8 +56,8 @@
 .wc-skeleton {
   background: linear-gradient(
     135deg,
-    hsl(35 10% 12%) 0%,
-    hsl(35 8% 18%) 50%,
+      hsl(35 10% 12%) 0%,
+      hsl(35 8% 18%) 50%,
     hsl(35 10% 14%) 100%
   );
   box-shadow:
@@ -70,8 +70,8 @@
 .wc-skeleton-orc {
   background: linear-gradient(
     135deg,
-    hsl(0 30% 12%) 0%,
-    hsl(10 25% 18%) 50%,
+      hsl(0 30% 12%) 0%,
+      hsl(10 25% 18%) 50%,
     hsl(0 30% 14%) 100%
   );
   box-shadow:
@@ -84,8 +84,8 @@
 .wc-skeleton-elf {
   background: linear-gradient(
     135deg,
-    hsl(170 35% 12%) 0%,
-    hsl(175 30% 18%) 50%,
+      hsl(170 35% 12%) 0%,
+      hsl(175 30% 18%) 50%,
     hsl(170 35% 14%) 100%
   );
   box-shadow:
@@ -98,8 +98,8 @@
 .wc-skeleton-human {
   background: linear-gradient(
     135deg,
-    hsl(220 40% 15%) 0%,
-    hsl(225 35% 20%) 50%,
+      hsl(220 40% 15%) 0%,
+      hsl(225 35% 20%) 50%,
     hsl(220 40% 17%) 100%
   );
   box-shadow:
@@ -112,8 +112,8 @@
 .wc-skeleton-undead {
   background: linear-gradient(
     135deg,
-    hsl(270 25% 10%) 0%,
-    hsl(275 20% 15%) 50%,
+      hsl(270 25% 10%) 0%,
+      hsl(275 20% 15%) 50%,
     hsl(270 25% 12%) 100%
   );
   box-shadow:
@@ -147,12 +147,12 @@
 .wc-skeleton .wc-skeleton-shimmer {
   background: linear-gradient(
     90deg,
-    transparent 0%,
-    hsl(45 100% 50% / 0.08) 20%,
-    hsl(40 100% 60% / 0.15) 40%,
-    hsl(35 100% 55% / 0.2) 50%,
-    hsl(40 100% 60% / 0.15) 60%,
-    hsl(45 100% 50% / 0.08) 80%,
+      transparent 0%,
+      hsl(45 100% 50% / 0.08) 20%,
+      hsl(40 100% 60% / 0.15) 40%,
+      hsl(35 100% 55% / 0.2) 50%,
+      hsl(40 100% 60% / 0.15) 60%,
+      hsl(45 100% 50% / 0.08) 80%,
     transparent 100%
   );
 }
@@ -161,12 +161,12 @@
 .wc-skeleton-orc .wc-skeleton-shimmer {
   background: linear-gradient(
     90deg,
-    transparent 0%,
-    hsl(10 100% 50% / 0.08) 20%,
-    hsl(15 100% 60% / 0.15) 40%,
-    hsl(20 100% 55% / 0.2) 50%,
-    hsl(15 100% 60% / 0.15) 60%,
-    hsl(10 85% 50% / 0.08) 80%,
+      transparent 0%,
+      hsl(10 100% 50% / 0.08) 20%,
+      hsl(15 100% 60% / 0.15) 40%,
+      hsl(20 100% 55% / 0.2) 50%,
+      hsl(15 100% 60% / 0.15) 60%,
+      hsl(10 85% 50% / 0.08) 80%,
     transparent 100%
   );
 }
@@ -175,12 +175,12 @@
 .wc-skeleton-elf .wc-skeleton-shimmer {
   background: linear-gradient(
     90deg,
-    transparent 0%,
-    hsl(180 80% 60% / 0.08) 20%,
-    hsl(185 70% 65% / 0.15) 40%,
-    hsl(190 60% 70% / 0.2) 50%,
-    hsl(185 70% 65% / 0.15) 60%,
-    hsl(180 80% 60% / 0.08) 80%,
+      transparent 0%,
+      hsl(180 80% 60% / 0.08) 20%,
+      hsl(185 70% 65% / 0.15) 40%,
+      hsl(190 60% 70% / 0.2) 50%,
+      hsl(185 70% 65% / 0.15) 60%,
+      hsl(180 80% 60% / 0.08) 80%,
     transparent 100%
   );
 }
@@ -189,12 +189,12 @@
 .wc-skeleton-human .wc-skeleton-shimmer {
   background: linear-gradient(
     90deg,
-    transparent 0%,
-    hsl(200 80% 60% / 0.08) 20%,
-    hsl(210 70% 65% / 0.15) 40%,
-    hsl(220 60% 70% / 0.2) 50%,
-    hsl(210 70% 65% / 0.15) 60%,
-    hsl(200 80% 60% / 0.08) 80%,
+      transparent 0%,
+      hsl(200 80% 60% / 0.08) 20%,
+      hsl(210 70% 65% / 0.15) 40%,
+      hsl(220 60% 70% / 0.2) 50%,
+      hsl(210 70% 65% / 0.15) 60%,
+      hsl(200 80% 60% / 0.08) 80%,
     transparent 100%
   );
 }
@@ -203,12 +203,12 @@
 .wc-skeleton-undead .wc-skeleton-shimmer {
   background: linear-gradient(
     90deg,
-    transparent 0%,
-    hsl(280 70% 50% / 0.08) 20%,
-    hsl(285 60% 55% / 0.15) 40%,
-    hsl(290 50% 60% / 0.2) 50%,
-    hsl(285 60% 55% / 0.15) 60%,
-    hsl(280 70% 50% / 0.08) 80%,
+      transparent 0%,
+      hsl(280 70% 50% / 0.08) 20%,
+      hsl(285 60% 55% / 0.15) 40%,
+      hsl(290 50% 60% / 0.2) 50%,
+      hsl(285 60% 55% / 0.15) 60%,
+      hsl(280 70% 50% / 0.08) 80%,
     transparent 100%
   );
 }
@@ -276,4 +276,35 @@
 
 .clip-path-banner {
   clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
+}
+
+/* ============================================
+   Avatar FACTION VARIANTS
+   ============================================ */
+
+.wc-avatar-default {
+  --wc-frame-url: url("../assets/avatar-default.webp");
+}
+
+.wc-avatar-human {
+  --wc-frame-url: url("../assets/avatar-human.webp");
+}
+
+.wc-avatar-elf {
+  --wc-frame-url: url("../assets/avatar-elf.webp");
+}
+
+.wc-avatar-orc {
+  --wc-frame-url: url("../assets/avatar-orc.webp");
+}
+
+.wc-avatar-undead {
+  --wc-frame-url: url("../assets/avatar-undead.webp");
+}
+
+.wc-avatar-frame {
+  background-image: var(--wc-frame-url);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
