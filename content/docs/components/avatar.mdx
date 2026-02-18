@@ -12,117 +12,117 @@ import { Avatar } from "@/components/ui/warcraftcn/avatar";
         alt="Human Peasant"
         faction="default"
         size="sm"
-        src="\warcraftcn\human-peasant.webp"
+        src="/warcraftcn/human-peasant.webp"
       />
 
       <Avatar
         alt="Human Peasant"
         faction="default"
         size="md"
-        src="\warcraftcn\human-peasant.webp"
+        src="/warcraftcn/human-peasant.webp"
       />
       <Avatar
         alt="Human Peasant"
         faction="default"
         size="lg"
-        src="\warcraftcn\human-peasant.webp"
+        src="/warcraftcn/human-peasant.webp"
       />
     </div>
 
 
-## Orc Fraction 
+## Orc Faction 
     
     <div className="flex flex-row gap-2">
       <Avatar
         alt="Orc Hero"
         faction="orc"
         size="sm"
-        src="\warcraftcn\orc-hero.webp"
+        src="/warcraftcn/orc-hero.webp"
       />
 
       <Avatar
         alt="Orc Hero"
         faction="orc"
         size="md"
-        src="\warcraftcn\orc-hero.webp"
+        src="/warcraftcn/orc-hero.webp"
       />
       <Avatar
         alt="Orc Hero"
         faction="orc"
         size="lg"
-        src="\warcraftcn\orc-hero.webp"
+        src="/warcraftcn/orc-hero.webp"
       />
     </div>
 
-## Elf Fraction 
+## Elf Faction 
 
     <div className="flex flex-row gap-2">
       <Avatar
         alt="Elf Hero"
         faction="elf"
         size="sm"
-        src="\warcraftcn\elf-hero.webp"
+        src="/warcraftcn/elf-hero.webp"
       />
 
       <Avatar
         alt="Elf Hero"
         faction="elf"
         size="md"
-        src="\warcraftcn\elf-hero.webp"
+        src="/warcraftcn/elf-hero.webp"
       />
       <Avatar
         alt="Elf Hero"
         faction="elf"
         size="lg"
-        src="\warcraftcn\elf-hero.webp"
+        src="/warcraftcn/elf-hero.webp"
       />
     </div>
 
-## Human Fraction 
+## Human Faction 
 
    <div className="flex flex-row gap-2">
       <Avatar
         alt="Human Hero"
         faction="human"
         size="sm"
-        src="\warcraftcn\human-hero.webp"
+        src="/warcraftcn/human-hero.webp"
       />
 
       <Avatar
         alt="Human Hero"
         faction="human"
         size="md"
-        src="\warcraftcn\human-hero.webp"
+        src="/warcraftcn/human-hero.webp"
       />
       <Avatar
         alt="Human Hero"
         faction="human"
         size="lg"
-        src="\warcraftcn\human-hero.webp"
+        src="/warcraftcn/human-hero.webp"
       />
     </div>
 
-## Undead Fraction 
+## Undead Faction 
     
      <div className="flex flex-row gap-2">
       <Avatar
         alt="Undead Hero"
         faction="undead"
         size="sm"
-        src="\warcraftcn\undead-hero.webp"
+        src="/warcraftcn/undead-hero.webp"
       />
 
       <Avatar
          alt="Undead Hero"
         faction="undead"
         size="md"
-        src="\warcraftcn\undead-hero.webp"
+        src="/warcraftcn/undead-hero.webp"
       />
       <Avatar
         alt="Undead Hero"
         faction="undead"
         size="lg"
-        src="\warcraftcn\undead-hero.webp"
+        src="/warcraftcn/undead-hero.webp"
       />
     </div>
      
@@ -137,39 +137,16 @@ pnpm dlx shadcn@latest add https://warcraftcn.com/r/avatar.json
 ```tsx
 import { Avatar } from "@/components/ui/warcraftcn/avatar";
 
-      <Avatar
-        alt="Human Peasant"
-        faction="default"
-        size="sm"
-        src="\warcraftcn\human-peasant.webp"
-      />;
-
-        <Avatar
-        alt="Orc Hero"
-        faction="orc"
-        size="md"
-        src="\warcraftcn\orc-hero.webp"
-      />;
-
-       <Avatar
-        alt="Elf Hero"
-        faction="elf"
-        size="lg"
-        src="\warcraftcn\elf-hero.webp"
-      />  
-
-       <Avatar
-        alt="Human Hero"
-        faction="human"
-        size="lg"
-        src="\warcraftcn\human-hero.webp"
-      />
-      
-       <Avatar
-        alt="Undead Hero"
-        faction="undead"
-        size="lg"
-        src="\warcraftcn\undead-hero.webp"
-      />  
+export default function AvatarExample () {
+  return (
+    <div className="flex flex-row gap-2">
+      <Avatar alt="Human Peasant" faction="default" size="sm" src="/warcraftcn/human-peasant.webp" />
+      <Avatar alt="Orc Hero" faction="orc" size="md" src="/warcraftcn/orc-hero.webp" />
+      <Avatar alt="Elf Hero" faction="elf" size="lg" src="/warcraftcn/elf-hero.webp" />
+      <Avatar alt="Human Hero" faction="human" size="lg" src="/warcraftcn/human-hero.webp" />
+      <Avatar alt="Undead Hero" faction="undead" size="lg" src="/warcraftcn/undead-hero.webp" />
+    </div>
+  );
+}
       
       ```
