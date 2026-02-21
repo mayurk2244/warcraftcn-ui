@@ -18,7 +18,7 @@ import { Button } from "@/components/ui/warcraftcn/button";
 ## Orc Faction 
     
    <Cursor faction="orc">  
-      <div className="flex flex-col md:flex-row gap 2">
+      <div className="flex flex-col md:flex-row gap-2">        
         <Card>
           <CardHeader className="text-white text-center">
             <CardTitle className="text-xl font-bold text-yellow-400">Blademaster</CardTitle>
@@ -32,7 +32,7 @@ import { Button } from "@/components/ui/warcraftcn/button";
               />
           </CardContent>
           <CardFooter>
-            <Button variant="frame" className="w-full cursor-default" >
+            <Button variant="frame" className="w-full" >
               Select Hero
             </Button>
           </CardFooter>
@@ -262,20 +262,16 @@ import { Button } from "@/components/ui/warcraftcn/button";
 ## Installation
 
 ```bash
-pnpm dlx shadcn@latest add https://warcraftcn.com/r/cusror.json
-```
+pnpm dlx shadcn@latest add https://warcraftcn.com/r/cursor.json```
 
 ## Usage
 
 ```tsx
-import { Cursor } from "@/components/ui/warcraftcn/avatar";
-
+import { Cursor } from "@/components/ui/warcraftcn/cursor";
 export default function CursorExample () {
   return (
     <Cursor faction="undead">  
       ....
     </Cursor>
   );
-}
-      
-      ```
+}```

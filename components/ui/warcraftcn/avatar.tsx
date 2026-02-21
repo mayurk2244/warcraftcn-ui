@@ -1,8 +1,6 @@
-"use client";
 import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
-import { useIsMobile } from "@/hooks/use-mobile"; 
 
 import "@/components/ui/warcraftcn/styles/warcraft.css";
 
@@ -29,11 +27,10 @@ const avatarVariants = cva("fantasy relative", {
 
 export interface AvatarProps
   extends Omit<React.ComponentProps<"div">, "children">,
-  VariantProps<typeof avatarVariants> {
+    VariantProps<typeof avatarVariants> {
   src?: string; // Avatar image URL
   alt?: string; // Alt text
   fallback?: React.ReactNode; // Fallback if no image
-  // size is now sm | md | lg
   faction?: "default" | "orc" | "elf" | "human" | "undead";
   size?: "sm" | "md" | "lg";
 }
@@ -44,22 +41,13 @@ export const Avatar: React.FC<AvatarProps> = ({
   alt = "",
   fallback,
   faction = "default",
-  size,
+  size = "md",
   ...props
 }) => {
-  const isMobile = useIsMobile();
-  const resolvedSize: "sm" | "md" | "lg" = React.useMemo(() => {
-    if (size) return size;
-    return isMobile ? "lg" : "md";
-  }, [size, isMobile]);
-
-  const frameClasses = avatarVariants({ faction, size: resolvedSize });
+  const frameClasses = avatarVariants({ faction, size });
 
   return (
-    <div
-      className={cn("relative", frameClasses, className)}
-      {...props}
-    >
+    <div className={cn("relative", frameClasses, className)} {...props}>
       <div className="absolute inset-[20%] overflow-hidden">
         {src ? (
           <img
