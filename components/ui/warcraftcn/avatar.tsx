@@ -47,7 +47,7 @@ export const Avatar: React.FC<AvatarProps> = ({
   const frameClasses = avatarVariants({ faction, size });
 
   return (
-    <div className={cn("relative", frameClasses, className)} {...props}>
+    <div className={cn(frameClasses, className)} {...props}>
       <div className="absolute inset-[20%] overflow-hidden">
         {src ? (
           <img

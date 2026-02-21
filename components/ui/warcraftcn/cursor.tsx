@@ -1,4 +1,4 @@
-import type * as React from "react";
+import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 
@@ -21,7 +21,6 @@ const cursorVariants = cva("", {
 
 export interface CursorProps extends React.ComponentProps<"div">, VariantProps<typeof cursorVariants> {
   faction?: "default" | "orc" | "elf" | "human" | "undead";
-  children?: React.ReactNode;
 }
 
 export const Cursor: React.FC<CursorProps> = ({

@@ -269,24 +269,24 @@
           "target": "components/ui/warcraftcn/styles/warcraft.css"
         },
         {
-          "path": "components/ui/warcraftcn/assets/elf.cur",
+          "path": "components/ui/warcraftcn/assets/cursors/elf.cur",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/elf.cur"
+          "target": "components/ui/warcraftcn/assets/cursors/elf.cur"
         },
         {
-          "path": "components/ui/warcraftcn/assets/human.cur",
+          "path": "components/ui/warcraftcn/assets/cursors/human.cur",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/human.cur"
+          "target": "components/ui/warcraftcn/assets/cursors/human.cur"
         },
         {
-          "path": "components/ui/warcraftcn/assets/orc.cur",
+          "path": "components/ui/warcraftcn/assets/cursors/orc.cur",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/orc.cur"
+          "target": "components/ui/warcraftcn/assets/cursors/orc.cur"
         },
         {
-          "path": "components/ui/warcraftcn/assets/undead.cur",
+          "path": "components/ui/warcraftcn/assets/cursors/undead.cur",
           "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/undead.cur"
+          "target": "components/ui/warcraftcn/assets/cursors/undead.cur"
         }
       ]
     }
