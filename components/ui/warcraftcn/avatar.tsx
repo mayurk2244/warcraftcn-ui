@@ -1,6 +1,8 @@
-import type * as React from "react";
+"use client";
+import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils";
+import { useIsMobile } from "@/hooks/use-mobile"; 
 
 import "@/components/ui/warcraftcn/styles/warcraft.css";
 
@@ -42,10 +44,16 @@ export const Avatar: React.FC<AvatarProps> = ({
   alt = "",
   fallback,
   faction = "default",
-  size = "md",
+  size,
   ...props
 }) => {
-  const frameClasses = avatarVariants({ faction, size });
+  const isMobile = useIsMobile();
+  const resolvedSize: "sm" | "md" | "lg" = React.useMemo(() => {
+    if (size) return size;
+    return isMobile ? "lg" : "md";
+  }, [size, isMobile]);
+
+  const frameClasses = avatarVariants({ faction, size: resolvedSize });
 
   return (
     <div

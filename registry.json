@@ -230,6 +230,45 @@
           "target": "components/ui/warcraftcn/assets/avatar-undead.webp"
         }
       ]
+    },
+    {
+      "name": "cursor",
+      "type": "registry:component",
+      "title": "Warcraft Cursor",
+      "description": "A Warcraft-themed cursor component styled",
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/ui/warcraftcn/cursor.tsx",
+          "type": "registry:component",
+          "target": "components/ui/warcraftcn/cursor.tsx"
+        },
+        {
+          "path": "components/ui/warcraftcn/styles/warcraft.css",
+          "type": "registry:component",
+          "target": "components/ui/warcraftcn/styles/warcraft.css"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/elf.cur",
+          "type": "registry:file",
+          "target": "components/ui/warcraftcn/assets/elf.cur"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/human.cur",
+          "type": "registry:file",
+          "target": "components/ui/warcraftcn/assets/human.cur"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/orc.cur",
+          "type": "registry:file",
+          "target": "components/ui/warcraftcn/assets/orc.cur"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/undead.cur",
+          "type": "registry:file",
+          "target": "components/ui/warcraftcn/assets/undead.cur"
+        }
+      ]
     }
   ]
 }
