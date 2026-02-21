@@ -279,6 +279,59 @@
 }
 
 /* ============================================
+   TOOLTIP — Item Quality / Rarity Variants
+   ============================================ */
+
+/* Shared tooltip background */
+.wc-tooltip-base {
+  background: linear-gradient(
+    180deg,
+    hsl(35 15% 8%) 0%,
+    hsl(35 10% 5%) 100%
+  );
+}
+
+/* Default — gold/amber (Common) */
+.wc-tooltip {
+  border: 1px solid hsl(45 60% 35%);
+  box-shadow:
+    inset 0 0 8px hsl(45 50% 25% / 0.12),
+    0 4px 20px hsl(0 0% 0% / 0.7);
+}
+
+/* Uncommon — muted green */
+.wc-tooltip-uncommon {
+  border: 1px solid hsl(120 35% 32%);
+  box-shadow:
+    inset 0 0 8px hsl(120 30% 28% / 0.12),
+    0 4px 20px hsl(0 0% 0% / 0.7);
+}
+
+/* Rare — muted blue */
+.wc-tooltip-rare {
+  border: 1px solid hsl(220 50% 42%);
+  box-shadow:
+    inset 0 0 8px hsl(220 45% 38% / 0.12),
+    0 4px 20px hsl(0 0% 0% / 0.7);
+}
+
+/* Epic — muted purple */
+.wc-tooltip-epic {
+  border: 1px solid hsl(280 40% 42%);
+  box-shadow:
+    inset 0 0 10px hsl(280 35% 38% / 0.15),
+    0 4px 20px hsl(0 0% 0% / 0.7);
+}
+
+/* Legendary — warm muted orange */
+.wc-tooltip-legendary {
+  border: 1px solid hsl(30 70% 40%);
+  box-shadow:
+    inset 0 0 10px hsl(30 60% 35% / 0.15),
+    0 4px 20px hsl(0 0% 0% / 0.7);
+}
+
+/* ============================================
    Avatar FACTION VARIANTS
    ============================================ */
 

@@ -232,41 +232,22 @@
       ]
     },
     {
-      "name": "cursor",
+      "name": "tooltip",
       "type": "registry:component",
-      "title": "Warcraft Cursor",
-      "description": "A Warcraft-themed cursor component with faction-specific cursor styles",
+      "title": "Warcraft Tooltip",
+      "description": "A Warcraft-themed tooltip component with item-quality rarity variants (default, uncommon, rare, epic, legendary) and side positioning support",
+      "dependencies": ["radix-ui"],
       "registryDependencies": [],
       "files": [
         {
-          "path": "components/ui/warcraftcn/cursor.tsx",
+          "path": "components/ui/warcraftcn/tooltip.tsx",
           "type": "registry:component",
-          "target": "components/ui/warcraftcn/cursor.tsx"
+          "target": "components/ui/warcraftcn/tooltip.tsx"
         },
         {
           "path": "components/ui/warcraftcn/styles/warcraft.css",
           "type": "registry:component",
           "target": "components/ui/warcraftcn/styles/warcraft.css"
-        },
-        {
-          "path": "components/ui/warcraftcn/assets/elf.cur",
-          "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/elf.cur"
-        },
-        {
-          "path": "components/ui/warcraftcn/assets/human.cur",
-          "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/human.cur"
-        },
-        {
-          "path": "components/ui/warcraftcn/assets/orc.cur",
-          "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/orc.cur"
-        },
-        {
-          "path": "components/ui/warcraftcn/assets/undead.cur",
-          "type": "registry:file",
-          "target": "components/ui/warcraftcn/assets/undead.cur"
         }
       ]
     }

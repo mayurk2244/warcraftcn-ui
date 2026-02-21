@@ -1,0 +1,213 @@
+---
+title: Tooltip
+description: A popup that displays Warcraft-styled information when the element receives keyboard focus or the mouse hovers over it.
+---
+
+import { Button } from "@/components/ui/warcraftcn/button";
+import {
+  Tooltip,
+  TooltipBody,
+  TooltipContent,
+  TooltipTitle,
+  TooltipTrigger,
+} from "@/components/ui/warcraftcn/tooltip";
+
+<Tooltip>
+  <TooltipTrigger asChild>
+    <Button className="w-64 md:w-96">Hover</Button>
+  </TooltipTrigger>
+  <TooltipContent>
+    <TooltipTitle>Hearthstone</TooltipTitle>
+    <TooltipBody>Binds when picked up</TooltipBody>
+  </TooltipContent>
+</Tooltip>
+
+## Examples
+
+### Default
+
+<Tooltip>
+  <TooltipTrigger asChild>
+    <Button className="w-64 md:w-96">Default</Button>
+  </TooltipTrigger>
+  <TooltipContent>
+    <TooltipTitle>Hearthstone</TooltipTitle>
+    <TooltipBody>Binds when picked up</TooltipBody>
+  </TooltipContent>
+</Tooltip>
+
+```tsx
+<Tooltip>
+  <TooltipTrigger asChild>
+    <Button>Default</Button>
+  </TooltipTrigger>
+  <TooltipContent>
+    <TooltipTitle>Hearthstone</TooltipTitle>
+    <TooltipBody>Binds when picked up</TooltipBody>
+  </TooltipContent>
+</Tooltip>
+```
+
+### Uncommon
+
+<Tooltip>
+  <TooltipTrigger asChild>
+    <Button className="w-64 md:w-96">Uncommon</Button>
+  </TooltipTrigger>
+  <TooltipContent variant="uncommon">
+    <TooltipTitle>Outrunner's Cloak</TooltipTitle>
+    <TooltipBody>Binds when equipped</TooltipBody>
+  </TooltipContent>
+</Tooltip>
+
+```tsx
+<TooltipContent variant="uncommon">
+  <TooltipTitle>Outrunner's Cloak</TooltipTitle>
+  <TooltipBody>Binds when equipped</TooltipBody>
+</TooltipContent>
+```
+
+### Rare
+
+<Tooltip>
+  <TooltipTrigger asChild>
+    <Button className="w-64 md:w-96">Rare</Button>
+  </TooltipTrigger>
+  <TooltipContent variant="rare">
+    <TooltipTitle>Azuresong Mageblade</TooltipTitle>
+    <TooltipBody>Binds when picked up</TooltipBody>
+  </TooltipContent>
+</Tooltip>
+
+```tsx
+<TooltipContent variant="rare">
+  <TooltipTitle>Azuresong Mageblade</TooltipTitle>
+  <TooltipBody>Binds when picked up</TooltipBody>
+</TooltipContent>
+```
+
+### Epic
+
+<Tooltip>
+  <TooltipTrigger asChild>
+    <Button className="w-64 md:w-96">Epic</Button>
+  </TooltipTrigger>
+  <TooltipContent variant="epic">
+    <TooltipTitle>Ashbringer</TooltipTitle>
+    <TooltipBody>Binds when picked up</TooltipBody>
+  </TooltipContent>
+</Tooltip>
+
+```tsx
+<TooltipContent variant="epic">
+  <TooltipTitle>Ashbringer</TooltipTitle>
+  <TooltipBody>Binds when picked up</TooltipBody>
+</TooltipContent>
+```
+
+### Legendary
+
+<Tooltip>
+  <TooltipTrigger asChild>
+    <Button className="w-64 md:w-96">Legendary</Button>
+  </TooltipTrigger>
+  <TooltipContent variant="legendary">
+    <TooltipTitle>Thunderfury</TooltipTitle>
+    <TooltipBody>Binds when picked up</TooltipBody>
+  </TooltipContent>
+</Tooltip>
+
+```tsx
+<TooltipContent variant="legendary">
+  <TooltipTitle>Thunderfury</TooltipTitle>
+  <TooltipBody>Binds when picked up</TooltipBody>
+</TooltipContent>
+```
+
+### Side
+
+Use the `side` prop to change the position of the tooltip.
+
+<div className="flex flex-wrap gap-2">
+  <Tooltip>
+    <TooltipTrigger asChild>
+      <Button>Left</Button>
+    </TooltipTrigger>
+    <TooltipContent side="left">
+      <p>Left side</p>
+    </TooltipContent>
+  </Tooltip>
+
+<Tooltip>
+  <TooltipTrigger asChild>
+    <Button>Top</Button>
+  </TooltipTrigger>
+  <TooltipContent side="top">
+    <p>Top side</p>
+  </TooltipContent>
+</Tooltip>
+
+<Tooltip>
+  <TooltipTrigger asChild>
+    <Button>Bottom</Button>
+  </TooltipTrigger>
+  <TooltipContent side="bottom">
+    <p>Bottom side</p>
+  </TooltipContent>
+</Tooltip>
+
+  <Tooltip>
+    <TooltipTrigger asChild>
+      <Button>Right</Button>
+    </TooltipTrigger>
+    <TooltipContent side="right">
+      <p>Right side</p>
+    </TooltipContent>
+  </Tooltip>
+</div>
+
+```tsx
+<TooltipContent side="left">
+  <p>Left side</p>
+</TooltipContent>
+
+<TooltipContent side="top">
+  <p>Top side</p>
+</TooltipContent>
+
+<TooltipContent side="bottom">
+  <p>Bottom side</p>
+</TooltipContent>
+
+<TooltipContent side="right">
+  <p>Right side</p>
+</TooltipContent>
+```
+
+## Installation
+
+```bash
+pnpm dlx shadcn@latest add https://warcraftcn.com/r/tooltip.json
+```
+
+## Usage
+
+```tsx
+import {
+  Tooltip,
+  TooltipBody,
+  TooltipContent,
+  TooltipTitle,
+  TooltipTrigger,
+} from "@/components/ui/warcraftcn/tooltip";
+```
+
+```tsx
+<Tooltip>
+  <TooltipTrigger>Hover</TooltipTrigger>
+  <TooltipContent>
+    <TooltipTitle>Item Name</TooltipTitle>
+    <TooltipBody>Item description</TooltipBody>
+  </TooltipContent>
+</Tooltip>
+```
