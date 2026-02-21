@@ -235,7 +235,7 @@
       "name": "cursor",
       "type": "registry:component",
       "title": "Warcraft Cursor",
-      "description": "A Warcraft-themed cursor component styled",
+      "description": "A Warcraft-themed cursor component with faction-specific cursor styles",
       "registryDependencies": [],
       "files": [
         {
