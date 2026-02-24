@@ -1,0 +1,118 @@
+---
+title: Checkbox
+description: Stylized checkbox component with Warcraft faction themes
+---
+
+import { Checkbox } from "@/components/ui/warcraftcn/checkbox";
+import {
+  Card,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+  CardContent,
+  CardFooter,
+} from "@/components/ui/warcraftcn/card";
+
+## Default
+
+<div className="flex">
+  <Card>
+    <CardHeader>
+      <CardTitle className="text-whit">Setting</CardTitle>
+      <CardDescription>change game setting</CardDescription>
+    </CardHeader>
+    <CardContent className="my-3">
+      <Checkbox faction="default" label="Show Cooldowns"/>
+      <Checkbox faction="default" label="Enable Minimap" />
+      <Checkbox faction="default" label="Display Health Bars" />
+    </CardContent>
+  </Card>
+</div>
+
+## Orc Faction
+
+<div className="flex">
+  <Card>
+    <CardHeader>
+      <CardTitle className="text-whit">Setting</CardTitle>
+      <CardDescription>change game setting</CardDescription>
+    </CardHeader>
+    <CardContent className="my-3">
+      <Checkbox faction="orc" label="Show Cooldowns" />
+      <Checkbox faction="orc" label="Enable Minimap" />
+      <Checkbox faction="orc" label="Display Health Bars" />
+    </CardContent>
+  </Card>
+</div>
+
+## Elf Faction
+
+<div className="flex">
+  <Card>
+    <CardHeader>
+      <CardTitle className="text-whit">Setting</CardTitle>
+      <CardDescription>change game setting</CardDescription>
+    </CardHeader>
+    <CardContent className="my-3">
+      <Checkbox faction="elf" label="Show Cooldowns" />
+      <Checkbox faction="elf" label="Enable Minimap" />
+      <Checkbox faction="elf" label="Display Health Bars" />
+    </CardContent>
+  </Card>
+</div>
+
+## Human Faction
+
+<div className="flex">
+  <Card>
+    <CardHeader>
+      <CardTitle className="text-whit">Setting</CardTitle>
+      <CardDescription>change game setting</CardDescription>
+    </CardHeader>
+    <CardContent className="my-3">
+      <Checkbox faction="human" label="Show Cooldowns" />
+      <Checkbox faction="human" label="Enable Minimap" />
+      <Checkbox faction="human" label="Display Health Bars" />
+    </CardContent>
+  </Card>
+</div>
+
+## Undead Faction
+
+<div className="flex">
+  <Card>
+    <CardHeader>
+      <CardTitle className="text-whit">Setting</CardTitle>
+      <CardDescription>change game setting</CardDescription>
+    </CardHeader>
+    <CardContent className="my-3">
+      <Checkbox faction="undead" label="Show Cooldowns" />
+      <Checkbox faction="undead" label="Enable Minimap" />
+      <Checkbox faction="undead" label="Display Health Bars" />
+    </CardContent>
+  </Card>
+</div>
+
+## Installation
+
+```bash
+pnpm dlx shadcn@latest add https://warcraftcn.com/r/checkbox.json
+```
+
+## Usage
+
+```tsx
+import { Checkbox } from "@/components/ui/warcraftcn/checkbox";
+
+export default function CheckboxExample () {
+  return (
+    <div className="flex gap-8">
+      <Checkbox faction="default" label="Default" />
+      <Checkbox faction="orc" label="Orc" />
+      <Checkbox faction="elf" label="Elf" />
+      <Checkbox faction="human" label="Human" />
+      <Checkbox faction="undead" label="Undead" />
+    </div>
+  );
+}
+```

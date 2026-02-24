@@ -230,6 +230,75 @@
           "target": "components/ui/warcraftcn/assets/avatar-undead.webp"
         }
       ]
+    },
+    {
+      "name": "checkbox",
+      "type": "registry:component",
+      "title": "Warcraft Checkbox",
+      "description": "A Warcraft-themed checkbox component with faction-specific fantasy styling",
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/ui/warcraftcn/checkbox.tsx",
+          "type": "registry:component",
+          "target": "components/ui/warcraftcn/checkbox.tsx"
+        },
+        {
+          "path": "components/ui/warcraftcn/styles/warcraft.css",
+          "type": "registry:component",
+          "target": "components/ui/warcraftcn/styles/warcraft.css"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/checkbox-default.webp",
+          "type": "registry:file",
+          "target": "components/ui/warcraftcn/assets/checkbox-default.webp"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/checkbox-default-checked.webp",
+          "type": "registry:file",
+          "target": "components/ui/warcraftcn/assets/checkbox-default-checked.webp"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/checkbox-human.webp",
+          "type": "registry:file",
+          "target": "components/ui/warcraftcn/assets/checkbox-human.webp"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/checkbox-human-checked.webp",
+          "type": "registry:file",
+          "target": "components/ui/warcraftcn/assets/checkbox-human-checked.webp"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/checkbox-orc.webp",
+          "type": "registry:file",
+          "target": "components/ui/warcraftcn/assets/checkbox-orc.webp"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/checkbox-orc-checked.webp",
+          "type": "registry:file",
+          "target": "components/ui/warcraftcn/assets/checkbox-orc-checked.webp"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/checkbox-elf.webp",
+          "type": "registry:file",
+          "target": "components/ui/warcraftcn/assets/checkbox-elf.webp"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/checkbox-elf-checked.webp",
+          "type": "registry:file",
+          "target": "components/ui/warcraftcn/assets/checkbox-elf-checked.webp"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/checkbox-undead.webp",
+          "type": "registry:file",
+          "target": "components/ui/warcraftcn/assets/checkbox-undead.webp"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/checkbox-undead-checked.webp",
+          "type": "registry:file",
+          "target": "components/ui/warcraftcn/assets/checkbox-undead-checked.webp"
+        }
+      ]
     }
   ]
 }

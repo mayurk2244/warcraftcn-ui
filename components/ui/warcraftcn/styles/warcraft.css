@@ -308,3 +308,56 @@
   background-position: center;
   background-size: contain;
 }
+
+/* checkbox.css */
+.checkbox {
+  appearance: none;
+  width: 50px;
+  height: 50px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* Default faction */
+.checkbox-default {
+  background-image: url("../assets/checkbox-default.webp");
+}
+.checkbox-default:checked {
+  background-image: url("../assets/checkbox-default-checked.webp");
+}
+
+/* Human faction */
+.checkbox-human {
+  background-image: url("../assets/checkbox-human.webp");
+}
+.checkbox-human:checked {
+  background-image: url("../assets/checkbox-human-checked.webp");
+}
+
+/* Orc faction */
+.checkbox-orc {
+  background-image: url("../assets/checkbox-orc.webp");
+}
+.checkbox-orc:checked {
+  background-image: url("../assets/checkbox-orc-checked.webp");
+}
+
+/* Elf faction */
+.checkbox-elf {
+  background-image: url("../assets/checkbox-elf.webp");
+}
+.checkbox-elf:checked {
+  background-image: url("../assets/checkbox-elf-checked.webp");
+}
+
+/* Undead faction */
+.checkbox-undead {
+  background-image: url("../assets/checkbox-undead.webp");
+}
+.checkbox-undead:checked {
+  background-image: url("../assets/checkbox-undead-checked.webp");
+}
