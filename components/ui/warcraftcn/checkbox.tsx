@@ -57,13 +57,13 @@ export const Checkbox: React.FC<CheckboxProps> = ({
         className={cn(
           "checkbox",
           `checkbox-${faction}`,
-          "w-10 h-10"
+          "w-12 h-12"
         )}
         checked={checked}
         disabled={disabled}
         onChange={onChange}
         {...props}
-      />
+      />      
       {label && (
         <span className={CheckboxVariants({ faction })}>
           {label}
