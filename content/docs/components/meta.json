@@ -7,9 +7,12 @@
     "button",
     "card",
     "checkbox",
+    "cursor",
     "dropdown-menu",
     "input",
+    "label",
     "skeleton",
-    "textarea"
+    "textarea",
+    "tooltip"
   ]
 }
