@@ -393,6 +393,26 @@
           "target": "components/ui/warcraftcn/assets/checkbox-undead-checked.webp"
         }
       ]
+    },
+    {
+      "name": "radio-group",
+      "type": "registry:component",
+      "title": "Warcraft Radio Group",
+      "description": "A Warcraft-themed radio group component with gem socket styling and gold glow indicators",
+      "dependencies": ["radix-ui"],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/ui/warcraftcn/radio-group.tsx",
+          "type": "registry:component",
+          "target": "components/ui/warcraftcn/radio-group.tsx"
+        },
+        {
+          "path": "components/ui/warcraftcn/styles/warcraft.css",
+          "type": "registry:component",
+          "target": "components/ui/warcraftcn/styles/warcraft.css"
+        }
+      ]
     }
   ]
 }

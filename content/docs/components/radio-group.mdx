@@ -1,0 +1,116 @@
+---
+title: Radio Group
+description: A Warcraft-themed radio group component with gem socket styling.
+---
+
+import {
+  RadioGroup,
+  RadioGroupItem,
+} from "@/components/ui/warcraftcn/radio-group";
+import { Label } from "@/components/ui/warcraftcn/label";
+
+## Default
+
+<RadioGroup defaultValue="warrior">
+  <div className="flex items-center gap-3">
+    <RadioGroupItem value="warrior" id="doc-warrior" />
+    <Label htmlFor="doc-warrior">Warrior</Label>
+  </div>
+  <div className="flex items-center gap-3">
+    <RadioGroupItem value="mage" id="doc-mage" />
+    <Label htmlFor="doc-mage">Mage</Label>
+  </div>
+  <div className="flex items-center gap-3">
+    <RadioGroupItem value="hunter" id="doc-hunter" />
+    <Label htmlFor="doc-hunter">Hunter</Label>
+  </div>
+</RadioGroup>
+
+## Horizontal
+
+<RadioGroup defaultValue="normal" orientation="horizontal">
+  <div className="flex items-center gap-3">
+    <RadioGroupItem value="easy" id="doc-easy" />
+    <Label htmlFor="doc-easy">Easy</Label>
+  </div>
+  <div className="flex items-center gap-3">
+    <RadioGroupItem value="normal" id="doc-normal" />
+    <Label htmlFor="doc-normal">Normal</Label>
+  </div>
+  <div className="flex items-center gap-3">
+    <RadioGroupItem value="hard" id="doc-hard" />
+    <Label htmlFor="doc-hard">Hard</Label>
+  </div>
+</RadioGroup>
+
+## Disabled
+
+<RadioGroup defaultValue="alliance" disabled>
+  <div className="flex items-center gap-3">
+    <RadioGroupItem value="alliance" id="doc-alliance" />
+    <Label htmlFor="doc-alliance" disabled>
+      Alliance
+    </Label>
+  </div>
+  <div className="flex items-center gap-3">
+    <RadioGroupItem value="horde" id="doc-horde" />
+    <Label htmlFor="doc-horde" disabled>
+      Horde
+    </Label>
+  </div>
+</RadioGroup>
+
+## Installation
+
+```bash
+pnpm dlx shadcn@latest add https://warcraftcn.com/r/radio-group.json
+```
+
+## Usage
+
+```tsx
+import {
+  RadioGroup,
+  RadioGroupItem,
+} from "@/components/ui/warcraftcn/radio-group";
+import { Label } from "@/components/ui/warcraftcn/label";
+
+<RadioGroup defaultValue="option-one">
+  <div className="flex items-center gap-3">
+    <RadioGroupItem value="option-one" id="option-one" />
+    <Label htmlFor="option-one">Option One</Label>
+  </div>
+  <div className="flex items-center gap-3">
+    <RadioGroupItem value="option-two" id="option-two" />
+    <Label htmlFor="option-two">Option Two</Label>
+  </div>
+</RadioGroup>;
+```
+
+### Horizontal Orientation
+
+```tsx
+<RadioGroup defaultValue="a" orientation="horizontal">
+  <div className="flex items-center gap-3">
+    <RadioGroupItem value="a" id="a" />
+    <Label htmlFor="a">Option A</Label>
+  </div>
+  <div className="flex items-center gap-3">
+    <RadioGroupItem value="b" id="b" />
+    <Label htmlFor="b">Option B</Label>
+  </div>
+</RadioGroup>
+```
+
+### Disabled State
+
+```tsx
+<RadioGroup defaultValue="locked" disabled>
+  <div className="flex items-center gap-3">
+    <RadioGroupItem value="locked" id="locked" />
+    <Label htmlFor="locked" disabled>
+      Locked Option
+    </Label>
+  </div>
+</RadioGroup>
+```
