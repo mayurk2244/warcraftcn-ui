@@ -1,0 +1,75 @@
+---
+title: Accordion
+description: A Warcraft styled accordion component.
+---
+
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/warcraftcn/accordion";
+
+<Accordion
+  type="single"
+  collapsible
+  defaultValue="The fall"
+  className="max-w-lg mx-auto"
+>
+  <AccordionItem value="The fall">
+    <AccordionTrigger icon="rune-stone">The Fall of Lordaeron</AccordionTrigger>
+    <AccordionContent>
+      Prince Arthas Menethil returned home not as a savior, but as the harbinger
+      of ruin. Under the influence of Frostmourne, he marched upon his own
+      kingdom. The capital of Lordaeron fell in a single night, its banners
+      burned and its people raised into undeath. Thus began the reign of the
+      Scourge in the Eastern Kingdoms.
+    </AccordionContent>
+  </AccordionItem>
+  <AccordionItem value="The Rise of the Lich King">
+    <AccordionTrigger icon="sword">The Rise of the Lich King</AccordionTrigger>
+    <AccordionContent>
+      High atop the Frozen Throne, the spirit of Ner’zhul awaited its chosen
+      champion. Arthas ascended the icy spire and shattered the prison of the
+      Lich King, donning the Helm of Domination. In that moment, the prince and
+      the orc shaman became one being — the Lich King — ruler of the Scourge and
+      master of death.
+    </AccordionContent>
+  </AccordionItem>
+  <AccordionItem value="The Battle of Mount Hyjal">
+    <AccordionTrigger icon="shield">The Battle of Mount Hyjal</AccordionTrigger>
+    <AccordionContent>
+      As Archimonde and the Burning Legion sought to claim the World Tree, an
+      unlikely alliance formed. Humans, Orcs, and Night Elves stood united
+      against annihilation. Upon the slopes of Mount Hyjal, sacrifice and
+      strategy turned the tide, and the Legion’s invasion was shattered in
+      arcane fire and ancient magic.
+    </AccordionContent>
+  </AccordionItem>
+</Accordion>
+## Installation
+
+```bash
+pnpm dlx shadcn@latest add https://warcraftcn.com/r/accordion.json
+```
+
+## Usage
+
+```tsx
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/warcraftcn/accordion";
+
+<Accordion type="single" collapsible>
+  <AccordionItem value="item-1">
+    <AccordionTrigger>Warchief Orders</AccordionTrigger>
+    <AccordionContent>
+      Build a stronghold quickly, then strike enemy outposts before they can
+      fortify.
+    </AccordionContent>
+  </AccordionItem>
+</Accordion>;
+```

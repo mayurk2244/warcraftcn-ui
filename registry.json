@@ -413,6 +413,51 @@
           "target": "components/ui/warcraftcn/styles/warcraft.css"
         }
       ]
+    },
+    {
+      "name": "accordion",
+      "type": "registry:component",
+      "title": "Warcraft Accordion",
+      "description": "A Warcraft styled accordion component",
+      "dependencies": ["radix-ui"],
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/ui/warcraftcn/accordion.tsx",
+          "type": "registry:component",
+          "target": "components/ui/warcraftcn/accordion.tsx"
+        },
+        {
+          "path": "components/ui/warcraftcn/styles/warcraft.css",
+          "type": "registry:component",
+          "target": "components/ui/warcraftcn/styles/warcraft.css"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/svg/rune-stone.svg",
+          "type": "registry:file",
+          "target": "components/ui/warcraftcn/assets/svg/rune-stone.svg"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/svg/shield.svg",
+          "type": "registry:file",
+          "target": "components/ui/warcraftcn/assets/svg/shield.svg"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/svg/sword.svg",
+          "type": "registry:file",
+          "target": "components/ui/warcraftcn/assets/svg/sword.svg"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/accordion-content-bg.webp",
+          "type": "registry:file",
+          "target": "components/ui/warcraftcn/assets/accordion-content-bg.webp"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/accordion-header.webp",
+          "type": "registry:file",
+          "target": "components/ui/warcraftcn/assets/accordion-header.webp"
+        }
+      ]
     }
   ]
 }
