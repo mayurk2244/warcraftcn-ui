@@ -1,0 +1,104 @@
+---
+title: Spinner
+description: A Warcraft III inspired summoning glyph spinner.
+---
+
+import { Badge } from "@/components/ui/warcraftcn/badge";
+import { Button } from "@/components/ui/warcraftcn/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/warcraftcn/card";
+import { Input } from "@/components/ui/warcraftcn/input";
+import { Spinner } from "@/components/ui/warcraftcn/spinner";
+
+## Standard
+
+<div className="flex items-center gap-6">
+  <Spinner className="size-6" />
+  <Spinner className="size-8" />
+  <Spinner />
+  <Spinner className="size-14" />
+  <Spinner className="size-16" />
+</div>
+
+## Installation
+
+```bash
+pnpm dlx shadcn@latest add https://warcraftcn.com/r/spinner.json
+```
+
+## Usage
+
+```tsx
+import { Spinner } from "@/components/ui/warcraftcn/spinner";
+
+<Spinner />
+```
+
+## Size
+
+```tsx
+<Spinner className="size-6" />
+<Spinner className="size-10" />
+<Spinner className="size-14" />
+```
+
+## In Buttons
+
+```tsx
+import { Button } from "@/components/ui/warcraftcn/button";
+import { Spinner } from "@/components/ui/warcraftcn/spinner";
+
+<Button disabled className="w-56">
+  <Spinner className="size-5" />
+  Summoning...
+</Button>;
+```
+
+## Use Cases
+
+### Button Loading State
+
+<Button disabled className="w-64">
+  <Spinner className="size-6" />
+  Summoning...
+</Button>
+
+### Badge Status
+
+<div className="flex items-center gap-4">
+  <Badge>
+    <Spinner className="size-4" />
+    Syncing
+  </Badge>
+  <Badge variant="secondary">
+    <Spinner className="size-6" />
+    Updating
+  </Badge>
+</div>
+
+### Input Prefix
+
+<div className="max-w-sm">
+  <div className="relative">
+    <Spinner className="size-4 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+    <Input className="pl-10" placeholder="Channeling necromancy..." disabled />
+  </div>
+</div>
+
+### Card Processing State
+
+<Card className="max-w-lg">
+  <CardHeader>
+    <CardTitle>Ritual Queue</CardTitle>
+    <CardDescription>Preparing structure for summoning.</CardDescription>
+  </CardHeader>
+  <CardContent className="flex items-center justify-between mb-4">
+    <span>Altar of Darkness</span>
+    <Spinner className="size-8" />
+  </CardContent>
+</Card>

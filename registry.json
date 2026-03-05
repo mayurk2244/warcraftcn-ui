@@ -110,6 +110,30 @@
       ]
     },
     {
+      "name": "spinner",
+      "type": "registry:component",
+      "title": "Warcraft Spinner",
+      "description": "A Warcraft-themed loading spinner based on acolyte summoning/mining glyph with animated runes and fade pulses",
+      "registryDependencies": [],
+      "files": [
+        {
+          "path": "components/ui/warcraftcn/spinner.tsx",
+          "type": "registry:component",
+          "target": "components/ui/warcraftcn/spinner.tsx"
+        },
+        {
+          "path": "components/ui/warcraftcn/assets/spinner-path.ts",
+          "type": "registry:component",
+          "target": "components/ui/warcraftcn/assets/spinner-path.ts"
+        },
+        {
+          "path": "components/ui/warcraftcn/styles/warcraft.css",
+          "type": "registry:component",
+          "target": "components/ui/warcraftcn/styles/warcraft.css"
+        }
+      ]
+    },
+    {
       "name": "badge",
       "type": "registry:component",
       "title": "Warcraft Badge",
