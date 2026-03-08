@@ -542,58 +542,70 @@
 }
 
 /* checkbox.css */
-.checkbox {
-  appearance: none;
+.wc-checkbox {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
   border: 2px solid transparent;
   border-radius: 4px;
   cursor: pointer;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  flex-shrink: 0;
   transition: border-color 0.15s ease;
 }
 
-.checkbox:focus-visible {
+.wc-checkbox:focus-visible {
   outline: none;
   border-color: hsl(45 100% 60%);
   box-shadow: 0 0 0 3px hsl(45 100% 60% / 0.4);
 }
-.checkbox-default {
+
+.wc-checkbox[data-disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.wc-checkbox-default {
   background-image: url("../assets/checkbox-default.webp");
 }
-.checkbox-default:checked {
+.wc-checkbox-default[data-state="checked"] {
   background-image: url("../assets/checkbox-default-checked.webp");
 }
 
 /* Human faction */
-.checkbox-human {
+.wc-checkbox-human {
   background-image: url("../assets/checkbox-human.webp");
 }
-.checkbox-human:checked {
+.wc-checkbox-human[data-state="checked"] {
   background-image: url("../assets/checkbox-human-checked.webp");
 }
 
 /* Orc faction */
-.checkbox-orc {
+.wc-checkbox-orc {
   background-image: url("../assets/checkbox-orc.webp");
 }
-.checkbox-orc:checked {
+.wc-checkbox-orc[data-state="checked"] {
   background-image: url("../assets/checkbox-orc-checked.webp");
 }
 
 /* Elf faction */
-.checkbox-elf {
+.wc-checkbox-elf {
   background-image: url("../assets/checkbox-elf.webp");
 }
-.checkbox-elf:checked {
+.wc-checkbox-elf[data-state="checked"] {
   background-image: url("../assets/checkbox-elf-checked.webp");
 }
 
 /* Undead faction */
-.checkbox-undead {
+.wc-checkbox-undead {
   background-image: url("../assets/checkbox-undead.webp");
 }
-.checkbox-undead:checked {
+.wc-checkbox-undead[data-state="checked"] {
   background-image: url("../assets/checkbox-undead-checked.webp");
 }
 

@@ -354,6 +354,7 @@
       "type": "registry:component",
       "title": "Warcraft Checkbox",
       "description": "A Warcraft-themed checkbox component with faction-specific fantasy styling",
+      "dependencies": ["radix-ui"],
       "registryDependencies": [],
       "files": [
         {

@@ -3,75 +3,75 @@ title: Checkbox
 description: Custom Warcraft-style checkbox component with faction themes.
 ---
 
-import { CheckboxGroup } from "@/components/examples/CheckboxGroup";
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/warcraftcn/card";
+import { Checkbox } from "@/components/ui/warcraftcn/checkbox";
 
 ## Default
 
-<div className="flex">
-  <Card>
-    <CardHeader>
-      <CardTitle className="text-white">Settings</CardTitle>
-      <CardDescription>Change game settings</CardDescription>
-    </CardHeader>
-    <CardContent className="my-3">
-     <CheckboxGroup faction="default" />
-    </CardContent>
-  </Card>
-</div>
+<Checkbox defaultChecked faction="default" id="doc-default">
+  Accept terms and conditions
+</Checkbox>
 
 ## Human Faction
 
-<div className="flex">
-  <Card>
-    <CardHeader>
-      <CardTitle className="text-white">Setting</CardTitle>
-      <CardDescription>change game setting</CardDescription>
-    </CardHeader>
-    <CardContent className="my-3">
-     <CheckboxGroup faction="human" />
-    </CardContent>
-  </Card>
-</div>
+<Checkbox defaultChecked faction="human" id="doc-human">
+  Accept terms and conditions
+</Checkbox>
 
 ## Orc Faction
 
-<div className="flex">
-  <Card>
-    <CardHeader>
-      <CardTitle className="text-white">Setting</CardTitle>
-      <CardDescription>change game setting</CardDescription>
-    </CardHeader>
-    <CardContent className="my-3">
-     <CheckboxGroup faction="orc" />
-    </CardContent>
-  </Card>
-</div>
+<Checkbox defaultChecked faction="orc" id="doc-orc">
+  Accept terms and conditions
+</Checkbox>
 
 ## Elf Faction
 
-<div className="flex">
-  <Card>
-    <CardHeader>
-      <CardTitle className="text-white">Setting</CardTitle>
-      <CardDescription>change game setting</CardDescription>
-    </CardHeader>
-    <CardContent className="my-3">
-     <CheckboxGroup faction="elf" />
-    </CardContent>
-  </Card>
-</div>
+<Checkbox defaultChecked faction="elf" id="doc-elf">
+  Accept terms and conditions
+</Checkbox>
 
 ## Undead Faction
 
-<div className="flex">
-  <Card>
-    <CardHeader>
-      <CardTitle className="text-white">Setting</CardTitle>
-      <CardDescription>change game setting</CardDescription>
-    </CardHeader>
-    <CardContent className="my-3">
-     <CheckboxGroup faction="undead" />
-    </CardContent>
-  </Card>
-</div>
+<Checkbox defaultChecked faction="undead" id="doc-undead">
+  Accept terms and conditions
+</Checkbox>
+
+## Disabled
+
+<Checkbox defaultChecked faction="default" disabled id="doc-disabled">
+  Locked setting
+</Checkbox>
+
+## Installation
+
+```bash
+pnpm dlx shadcn@latest add https://warcraftcn.com/r/checkbox.json
+```
+
+## Usage
+
+```tsx
+import { Checkbox } from "@/components/ui/warcraftcn/checkbox";
+```
+
+```tsx
+<Checkbox faction="default" id="terms">
+  Accept terms and conditions
+</Checkbox>
+```
+
+### Faction Variants
+
+```tsx
+<Checkbox faction="human">Human theme</Checkbox>
+<Checkbox faction="orc">Orc theme</Checkbox>
+<Checkbox faction="elf">Elf theme</Checkbox>
+<Checkbox faction="undead">Undead theme</Checkbox>
+```
+
+### Disabled State
+
+```tsx
+<Checkbox faction="default" disabled>
+  Locked setting
+</Checkbox>
+```
