@@ -22,7 +22,7 @@ const tabVariants = cva(
 
 // Responsive trigger style enhancements
 const triggerVariants = cva(
-  "wc-tab-trigger relative flex items-center justify-center font-semibold tracking-wide transition-transform duration-200 select-none whitespace-nowrap z-0 sm:max-w-[50px] lg:max-w-[40px]",
+  "wc-tab-trigger relative flex items-center justify-center font-semibold tracking-wide transition-transform duration-200 select-none whitespace-nowrap sm:max-w-[40px] lg:max-w-[50px]",
   {
     variants: {
       disabled: {
@@ -103,8 +103,8 @@ const TabsTrigger = React.forwardRef<React.ComponentRef<typeof RadixTabs.Trigger
       {...props}
     >
       <span className={cn(
-        "tab-label relative z-2 truncate tab-label-base",
-        "data-[orientation='vertical']:tab-label-vertical"      )}>
+        "tab-label relative truncate tab-label-base"
+        )}>
         {children}
       </span>
       <span className="tab-burst" />
@@ -121,7 +121,7 @@ const TabsContent = React.forwardRef<
   <RadixTabs.Content
     ref={ref}
     className={cn(
-      "wc-tab-content relative p-2 min-h-[140px] text-[#f3e7c4] bg-cover bg-no-repeat bg-center z-1 flex-1 md:w-full overflow-x-auto",
+      "wc-tab-content relative p-2 min-h-[140px] text-[#f3e7c4] bg-cover bg-no-repeat bg-center flex-1 md:w-full overflow-x-auto",
       // Adaptive paddings and height for each breakpoint
       "sm:p-4 sm:min-h-[180px]",
       "md:p-6 md:min-h-[220px]",
