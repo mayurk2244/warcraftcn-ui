@@ -1,0 +1,539 @@
+---
+title: Tabs
+description: Epic tabbed navigation with classic Warcraft themes
+---
+
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/warcraftcn/tabs"
+
+
+## Default (No Faction)
+
+<Tabs defaultValue="orc" className="w-[600px]">
+  <TabsList>
+    <TabsTrigger value="orc">Orc</TabsTrigger>
+    <TabsTrigger value="human">Human</TabsTrigger>
+    <TabsTrigger value="elf">Elf</TabsTrigger>
+    <TabsTrigger value="undead">Undead</TabsTrigger>
+    <TabsTrigger value="disabled" disabled>Disabled</TabsTrigger>
+  </TabsList>
+  <TabsContent value="orc">
+    <div style={{ color: "#fff" }}>
+      <strong>Orc</strong>  
+      <ul>
+        <li>Fierce warriors forged in battle.</li>
+        <li>Homeland: <span style={{ color: "#b91c1c" }}>Durotar</span></li>
+        <li>Rallying cry: <strong>Lok'tar ogar!</strong></li>
+        <li>Expertise: Melee combat, shaman magic</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="human">
+    <div style={{ color: "#fff" }}>
+      <strong>Human</strong>
+      <ul>
+        <li>Defenders of <span style={{ color: "#dbeafe" }}>Azeroth</span> and champions of the Alliance.</li>
+        <li>Highly adaptable; masters of magic and sword.</li>
+        <li>Home city: Stormwind</li>
+        <li>Motto: "For the Alliance!"</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="elf">
+    <div style={{ color: "#fff" }}>
+      <strong>Elf</strong>
+      <ul>
+        <li>Mystical guardians of the forests.</li>
+        <li>Possess ancient knowledge & magical prowess.</li>
+        <li>Domain: Ashenvale</li>
+        <li>Long-lived, reclusive, elegant</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="undead">
+    <div style={{ color: "#fff" }}>
+      <strong>Undead</strong>
+      <ul>
+        <li>Ruthless minions of the Lich King.</li>
+        <li>Wield dark magic and necromantic abilities.</li>
+        <li>Seek vengeance against the living.</li>
+        <li>Capital: Undercity (beneath Lordaeron)</li>
+      </ul>
+    </div>
+  </TabsContent>
+</Tabs>
+
+<Tabs defaultValue="orc" orientation="vertical" className="w-[400px] mt-10">
+  <TabsList>
+    <TabsTrigger value="orc">Orc</TabsTrigger>
+    <TabsTrigger value="human">Human</TabsTrigger>
+    <TabsTrigger value="elf">Elf</TabsTrigger>
+    <TabsTrigger value="undead">Undead</TabsTrigger>
+    <TabsTrigger value="disabled" disabled>Disabled</TabsTrigger>
+  </TabsList>
+  <TabsContent value="orc">
+    <div style={{ color: "#fff" }}>
+      <strong>Orc</strong>
+      <ul>
+        <li>Fierce warriors forged in battle.</li>
+        <li>Homeland: <span style={{ color: "#b91c1c" }}>Durotar</span></li>
+        <li>Rallying cry: <strong>Lok'tar ogar!</strong></li>
+        <li>Expertise: Melee combat, shaman magic</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="human">
+    <div style={{ color: "#fff" }}>
+      <strong>Human</strong>
+      <ul>
+        <li>Defenders of <span style={{ color: "#dbeafe" }}>Azeroth</span> and champions of the Alliance.</li>
+        <li>Highly adaptable; masters of magic and sword.</li>
+        <li>Home city: Stormwind</li>
+        <li>Motto: "For the Alliance!"</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="elf">
+    <div style={{ color: "#fff" }}>
+      <strong>Elf</strong>
+      <ul>
+        <li>Mystical guardians of the forests.</li>
+        <li>Possess ancient knowledge & magical prowess.</li>
+        <li>Domain: Ashenvale</li>
+        <li>Long-lived, reclusive, elegant</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="undead">
+    <div style={{ color: "#fff" }}>
+      <strong>Undead</strong>
+      <ul>
+        <li>Ruthless minions of the Lich King.</li>
+        <li>Wield dark magic and necromantic abilities.</li>
+        <li>Seek vengeance against the living.</li>
+        <li>Capital: Undercity (beneath Lordaeron)</li>
+      </ul>
+    </div>
+  </TabsContent>
+</Tabs>
+
+## Human Faction
+
+<Tabs defaultValue="human" className="w-[600px] mt-10" faction="human">
+  <TabsList>
+    <TabsTrigger value="orc">Orc</TabsTrigger>
+    <TabsTrigger value="human">Human</TabsTrigger>
+    <TabsTrigger value="elf">Elf</TabsTrigger>
+    <TabsTrigger value="undead">Undead</TabsTrigger>
+    <TabsTrigger value="disabled" disabled>Disabled</TabsTrigger>
+  </TabsList>
+  <TabsContent value="orc">
+    <div style={{ color: "#fff" }}>
+      <strong>Orc</strong>
+      <ul>
+        <li>Enemies to human civilization.</li>
+        <li>Renowned for raw power and raid tactics.</li>
+        <li>Fiercely loyal to their clans.</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="human">
+    <div style={{ color: "#fff" }}>
+      <strong>Human</strong>
+      <ul>
+        <li>The noble defenders of Azeroth.</li>
+        <li>Mastery over the sword and arcane.</li>
+        <li>Main city: Stormwind</li>
+        <li>Known for courage and ingenuity.</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="elf">
+    <div style={{ color: "#fff" }}>
+      <strong>Elf</strong>
+      <ul>
+        <li>Trusted ancient allies.</li>
+        <li>Command wisdom and magic.</li>
+        <li>Look to protect the natural world.</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="undead">
+    <div style={{ color: "#fff" }}>
+      <strong>Undead</strong>
+      <ul>
+        <li>Sworn foes, bringers of darkness.</li>
+        <li>Once-humans corrupted by undeath.</li>
+        <li>Seek to destroy civilization.</li>
+      </ul>
+    </div>
+  </TabsContent>
+</Tabs>
+
+<Tabs defaultValue="human" className="w-[600px] mt-10" faction="human" orientation="vertical">
+  <TabsList>
+    <TabsTrigger value="orc">Orc</TabsTrigger>
+    <TabsTrigger value="human">Human</TabsTrigger>
+    <TabsTrigger value="elf">Elf</TabsTrigger>
+    <TabsTrigger value="undead">Undead</TabsTrigger>
+    <TabsTrigger value="disabled" disabled>Disabled</TabsTrigger>
+  </TabsList>
+  <TabsContent value="orc">
+    <div style={{ color: "#fff" }}>
+      <strong>Orc</strong>
+      <ul>
+        <li>Enemies to human civilization.</li>
+        <li>Renowned for raw power and raid tactics.</li>
+        <li>Fiercely loyal to their clans.</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="human">
+    <div style={{ color: "#fff" }}>
+      <strong>Human</strong>
+      <ul>
+        <li>The noble defenders of Azeroth.</li>
+        <li>Mastery over the sword and arcane.</li>
+        <li>Main city: Stormwind</li>
+        <li>Known for courage and ingenuity.</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="elf">
+    <div style={{ color: "#fff" }}>
+      <strong>Elf</strong>
+      <ul>
+        <li>Trusted ancient allies.</li>
+        <li>Command wisdom and magic.</li>
+        <li>Look to protect the natural world.</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="undead">
+    <div style={{ color: "#fff" }}>
+      <strong>Undead</strong>
+      <ul>
+        <li>Sworn foes, bringers of darkness.</li>
+        <li>Once-humans corrupted by undeath.</li>
+        <li>Seek to destroy civilization.</li>
+      </ul>
+    </div>
+  </TabsContent>
+</Tabs>
+
+## Orc Faction
+
+<Tabs defaultValue="orc" className="w-[600px] mt-10" faction="orc">
+  <TabsList>
+    <TabsTrigger value="orc">Orc</TabsTrigger>
+    <TabsTrigger value="human">Human</TabsTrigger>
+    <TabsTrigger value="elf">Elf</TabsTrigger>
+    <TabsTrigger value="undead">Undead</TabsTrigger>
+    <TabsTrigger value="disabled" disabled>Disabled</TabsTrigger>
+  </TabsList>
+  <TabsContent value="orc">
+    <div style={{ color: "#fff" }}>
+      <strong>Orc</strong>
+      <ul>
+        <li>Fearless warriors from Durotar.</li>
+        <li>Masters of the axe and war drum.</li>
+        <li>Spirits, shamans, and raw fury.</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="human">
+    <div style={{ color: "#fff" }}>
+      <strong>Human</strong>
+      <ul>
+        <li>Traditional rivals; skilled in fortification.</li>
+        <li>Survivors of countless conflicts.</li>
+        <li>Arcane prowess and resilience.</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="elf">
+    <div style={{ color: "#fff" }}>
+      <strong>Elf</strong>
+      <ul>
+        <li>Mysterious magic and archery skills.</li>
+        <li>Elusive allies and foes in equal measure.</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="undead">
+    <div style={{ color: "#fff" }}>
+      <strong>Undead</strong>
+      <ul>
+        <li>Dreadful forces risen against the living.</li>
+        <li>Corrupted by the Lich King's influence.</li>
+      </ul>
+    </div>
+  </TabsContent>
+</Tabs>
+
+<Tabs defaultValue="orc" className="w-[600px] mt-10" faction="orc" orientation="vertical">
+  <TabsList>
+    <TabsTrigger value="orc">Orc</TabsTrigger>
+    <TabsTrigger value="human">Human</TabsTrigger>
+    <TabsTrigger value="elf">Elf</TabsTrigger>
+    <TabsTrigger value="undead">Undead</TabsTrigger>
+    <TabsTrigger value="disabled" disabled>Disabled</TabsTrigger>
+  </TabsList>
+  <TabsContent value="orc">
+    <div style={{ color: "#fff" }}>
+      <strong>Orc</strong>
+      <ul>
+        <li>Fearless warriors from Durotar.</li>
+        <li>Masters of the axe and war drum.</li>
+        <li>Spirits, shamans, and raw fury.</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="human">
+    <div style={{ color: "#fff" }}>
+      <strong>Human</strong>
+      <ul>
+        <li>Traditional rivals; skilled in fortification.</li>
+        <li>Survivors of countless conflicts.</li>
+        <li>Arcane prowess and resilience.</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="elf">
+    <div style={{ color: "#fff" }}>
+      <strong>Elf</strong>
+      <ul>
+        <li>Mysterious magic and archery skills.</li>
+        <li>Elusive allies and foes in equal measure.</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="undead">
+    <div style={{ color: "#fff" }}>
+      <strong>Undead</strong>
+      <ul>
+        <li>Dreadful forces risen against the living.</li>
+        <li>Corrupted by the Lich King's influence.</li>
+      </ul>
+    </div>
+  </TabsContent>
+</Tabs>
+
+## Elf Faction
+
+<Tabs defaultValue="elf" className="w-[600px] mt-10" faction="elf">
+  <TabsList>
+    <TabsTrigger value="orc">Orc</TabsTrigger>
+    <TabsTrigger value="human">Human</TabsTrigger>
+    <TabsTrigger value="elf">Elf</TabsTrigger>
+    <TabsTrigger value="undead">Undead</TabsTrigger>
+    <TabsTrigger value="disabled" disabled>Disabled</TabsTrigger>
+  </TabsList>
+  <TabsContent value="orc">
+    <div style={{ color: "#fff" }}>
+      <strong>Orc</strong>
+      <ul>
+        <li>Respect forest might, but follow their own way.</li>
+        <li>Conflicted alliances with the elves.</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="human">
+    <div style={{ color: "#fff" }}>
+      <strong>Human</strong>
+      <ul>
+        <li>Staunch defenders of civilization and order.</li>
+        <li>Sometimes distrust elven secrecy.</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="elf">
+    <div style={{ color: "#fff" }}>
+      <strong>Elf</strong>
+      <ul>
+        <li>The ancient, magical Kaldorei.</li>
+        <li>Guardians of the Emerald Dream.</li>
+        <li>Stewards of timeless wisdom and nature.</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="undead">
+    <div style={{ color: "#fff" }}>
+      <strong>Undead</strong>
+      <ul>
+        <li>Bane of all living things.</li>
+        <li>Dark magics threaten elven forests.</li>
+        <li>Perpetual conflict with the Kaldorei.</li>
+      </ul>
+    </div>
+  </TabsContent>
+</Tabs>
+
+<Tabs defaultValue="elf" className="w-[600px] mt-10" faction="elf" orientation="vertical">
+  <TabsList>
+    <TabsTrigger value="orc">Orc</TabsTrigger>
+    <TabsTrigger value="human">Human</TabsTrigger>
+    <TabsTrigger value="elf">Elf</TabsTrigger>
+    <TabsTrigger value="undead">Undead</TabsTrigger>
+    <TabsTrigger value="disabled" disabled>Disabled</TabsTrigger>
+  </TabsList>
+  <TabsContent value="orc">
+    <div style={{ color: "#fff" }}>
+      <strong>Orc</strong>
+      <ul>
+        <li>Respect forest might, but follow their own way.</li>
+        <li>Conflicted alliances with the elves.</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="human">
+    <div style={{ color: "#fff" }}>
+      <strong>Human</strong>
+      <ul>
+        <li>Staunch defenders of civilization and order.</li>
+        <li>Sometimes distrust elven secrecy.</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="elf">
+    <div style={{ color: "#fff" }}>
+      <strong>Elf</strong>
+      <ul>
+        <li>The ancient, magical Kaldorei.</li>
+        <li>Guardians of the Emerald Dream.</li>
+        <li>Stewards of timeless wisdom and nature.</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="undead">
+    <div style={{ color: "#fff" }}>
+      <strong>Undead</strong>
+      <ul>
+        <li>Bane of all living things.</li>
+        <li>Dark magics threaten elven forests.</li>
+        <li>Perpetual conflict with the Kaldorei.</li>
+      </ul>
+    </div>
+  </TabsContent>
+</Tabs>
+
+## Undead Faction
+
+<Tabs defaultValue="undead" className="w-[600px] mt-10" faction="undead">
+  <TabsList>
+    <TabsTrigger value="orc">Orc</TabsTrigger>
+    <TabsTrigger value="human">Human</TabsTrigger>
+    <TabsTrigger value="elf">Elf</TabsTrigger>
+    <TabsTrigger value="undead">Undead</TabsTrigger>
+    <TabsTrigger value="disabled" disabled>Disabled</TabsTrigger>
+  </TabsList>
+  <TabsContent value="orc">
+    <div style={{ color: "#fff" }}>
+      <strong>Orc</strong>
+      <ul>
+        <li>Stand at odds with the undead's blight.</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="human">
+    <div style={{ color: "#fff" }}>
+      <strong>Human</strong>
+      <ul>
+        <li>Terrorized by the undead like no other.</li>
+        <li>Great losses in Lordaeron's fall.</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="elf">
+    <div style={{ color: "#fff" }}>
+      <strong>Elf</strong>
+      <ul>
+        <li>Lands corrupted, groves despoiled.</li>
+        <li>Bitter enemies of the Scourge.</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="undead">
+    <div style={{ color: "#fff" }}>
+      <strong>Undead</strong>
+      <ul>
+        <li>Servants of the Lich King, risen from the grave.</li>
+        <li>Seek to spread undeath across Azeroth.</li>
+        <li>The world will know only darkness.</li>
+      </ul>
+    </div>
+  </TabsContent>
+</Tabs>
+
+<Tabs defaultValue="undead" className="w-[600px] mt-10" faction="undead" orientation="vertical">
+  <TabsList>
+    <TabsTrigger value="orc">Orc</TabsTrigger>
+    <TabsTrigger value="human">Human</TabsTrigger>
+    <TabsTrigger value="elf">Elf</TabsTrigger>
+    <TabsTrigger value="undead">Undead</TabsTrigger>
+    <TabsTrigger value="disabled" disabled>Disabled</TabsTrigger>
+  </TabsList>
+  <TabsContent value="orc">
+    <div style={{ color: "#fff" }}>
+      <strong>Orc</strong>
+      <ul>
+        <li>Stand at odds with the undead's blight.</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="human">
+    <div style={{ color: "#fff" }}>
+      <strong>Human</strong>
+      <ul>
+        <li>Terrorized by the undead like no other.</li>
+        <li>Great losses in Lordaeron's fall.</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="elf">
+    <div style={{ color: "#fff" }}>
+      <strong>Elf</strong>
+      <ul>
+        <li>Lands corrupted, groves despoiled.</li>
+        <li>Bitter enemies of the Scourge.</li>
+      </ul>
+    </div>
+  </TabsContent>
+  <TabsContent value="undead">
+    <div style={{ color: "#fff" }}>
+      <strong>Undead</strong>
+      <ul>
+        <li>Servants of the Lich King, risen from the grave.</li>
+        <li>Seek to spread undeath across Azeroth.</li>
+        <li>The world will know only darkness.</li>
+      </ul>
+    </div>
+  </TabsContent>
+</Tabs>
+
+## Installation
+
+```bash
+pnpm dlx shadcn@latest add https://warcraftcn.com/r/tabs.json
+```
+
+## Usage
+
+```tsx
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/warcraftcn/tabs"
+
+<Tabs defaultValue="orc">
+  <TabsList>
+    <TabsTrigger value="orc">Orc</TabsTrigger>
+    <TabsTrigger value="human">Human</TabsTrigger>
+    <TabsTrigger value="elf">Elf</TabsTrigger>
+    <TabsTrigger value="undead">Undead</TabsTrigger>
+    <TabsTrigger value="disabled" disabled>Disabled</TabsTrigger>
+  </TabsList>
+  <TabsContent value="orc">
+    <strong style={{ color: "#fff" }}>Orc</strong>
+  </TabsContent>
+  <TabsContent value="human">
+    <strong style={{ color: "#fff" }}>Human</strong>
+  </TabsContent>
+</Tabs>
+```

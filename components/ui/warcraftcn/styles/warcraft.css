@@ -771,3 +771,159 @@
 .wc-accordion-header-border {
   border-image-source: url("../assets/accordion-header.webp");
 }
+/* Default Tab Faction */
+/* TAB BUTTON */
+.wc-tabs-default .wc-tab-trigger {
+  background-image: url("../assets/tabs/tab-list.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-overflow: ellipsis;
+  height: 50px;
+}
+
+.wc-tab-trigger:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* HOVER LIFT */
+.wc-tab-trigger:hover {
+  filter: brightness(1.25);
+}
+
+/* ACTIVE TAB */
+.wc-tabs-default .wc-tab-trigger[data-state="active"] {
+  background-image: url("../assets/tabs/tab-list-active.webp");
+}
+
+/* CONTENT PANEL */
+.wc-tabs-default .wc-tab-content {
+  background-image: url("../assets/tabs/tab-content.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+/* Human Tab Faction */
+
+/* TAB BUTTON */
+.wc-tabs-human .wc-tab-trigger {
+  background-image: url("../assets/tabs/tab-list-human.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-overflow: ellipsis;
+}
+
+/* ACTIVE TAB */
+.wc-tabs-human .wc-tab-trigger[data-state="active"] {
+  background-image: url("../assets/tabs/tab-list-active-human.webp");
+}
+
+/* CONTENT PANEL */
+.wc-tabs-human .wc-tab-content {
+  background-image: url("../assets/tabs/tab-content-human.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+/* Orc Tab Faction */
+
+/* TAB BUTTON */
+.wc-tabs-orc .wc-tab-trigger {
+  background-image: url("../assets/tabs/tab-list-orc.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-overflow: ellipsis;
+}
+
+/* ACTIVE TAB */
+.wc-tabs-orc .wc-tab-trigger[data-state="active"] {
+  background-image: url("../assets/tabs/tab-list-active-orc.webp");
+}
+
+/* CONTENT PANEL */
+.wc-tabs-orc .wc-tab-content {
+  background-image: url("../assets/tabs/tab-content-orc.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+/* Elf Tab Faction */
+
+/* TAB BUTTON */
+.wc-tabs-elf .wc-tab-trigger {
+  background-image: url("../assets/tabs/tab-list-elf.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-overflow: ellipsis;
+  color: var(--color-black) 
+
+}
+
+/* ACTIVE TAB */
+.wc-tabs-elf .wc-tab-trigger[data-state="active"] {
+  background-image: url("../assets/tabs/tab-list-active-elf.webp");
+}
+
+/* CONTENT PANEL */
+.wc-tabs-elf .wc-tab-content {
+  background-image: url("../assets/tabs/tab-content-elf.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+/* Undead Tab Faction */
+
+/* TAB BUTTON */
+.wc-tabs-undead .wc-tab-trigger {
+  background-image: url("../assets/tabs/tab-list-undead.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  text-overflow: ellipsis;
+  color: var(--color-black) 
+
+}
+
+/* ACTIVE TAB */
+.wc-tabs-undead .wc-tab-trigger[data-state="active"] {
+  background-image: url("../assets/tabs/tab-list-active-undead.webp");
+}
+
+/* CONTENT PANEL */
+.wc-tabs-undead .wc-tab-content {
+  background-image: url("../assets/tabs/tab-content-undead.webp");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari and Opera */
+}
+
+/* Label and Content */
+.tab-label-base {
+  position: relative;
+  z-index: 2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+}
+
+.tab-label-vertical {
+  justify-content: flex-start;
+  text-align: left;
+  width: 100%;
+}
