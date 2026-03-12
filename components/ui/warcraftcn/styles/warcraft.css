@@ -772,6 +772,7 @@
   border-image-source: url("../assets/accordion-header.webp");
 }
 /* Default Tab Faction */
+
 /* TAB BUTTON */
 .wc-tabs-default .wc-tab-trigger {
   background-image: url("../assets/tabs/tab-list.webp");
@@ -781,9 +782,9 @@
   height: 50px;
 }
 
-.wc-tab-trigger:focus {
-  outline: none;
-  box-shadow: none;
+.wc-tab-trigger:focus-visible {
+  outline: 2px solid hsl(45 100% 60%);
+  outline-offset: 2px;
 }
 
 /* HOVER LIFT */
@@ -801,7 +802,7 @@
   background-image: url("../assets/tabs/tab-content.webp");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 200px;
+  height: 300px;
 }
 
 /* Human Tab Faction */
@@ -824,7 +825,7 @@
   background-image: url("../assets/tabs/tab-content-human.webp");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 200px;
+  height: 300px;
 }
 
 /* Orc Tab Faction */
@@ -847,7 +848,7 @@
   background-image: url("../assets/tabs/tab-content-orc.webp");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 200px;
+  height: 300px;
 }
 
 /* Elf Tab Faction */
@@ -858,8 +859,7 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   text-overflow: ellipsis;
-  color: var(--color-black) 
-
+  color: var(--color-black);
 }
 
 /* ACTIVE TAB */
@@ -872,7 +872,7 @@
   background-image: url("../assets/tabs/tab-content-elf.webp");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 200px;
+  height: 300px;
 }
 
 /* Undead Tab Faction */
@@ -883,8 +883,7 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   text-overflow: ellipsis;
-  color: var(--color-black) 
-
+  color: var(--color-black);
 }
 
 /* ACTIVE TAB */
@@ -897,7 +896,7 @@
   background-image: url("../assets/tabs/tab-content-undead.webp");
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 200px;
+  height: 300px;
 }
 
 .no-scrollbar {

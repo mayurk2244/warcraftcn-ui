@@ -94,7 +94,7 @@ const TabsTrigger = React.forwardRef<React.ComponentRef<typeof RadixTabs.Trigger
         "md:min-w-[120px] md:h-[44px] md:px-3 md:text-base",
         "lg:min-w-[140px] lg:h-[48px] lg:px-6 lg:text-lg",
         // Stacking/vertical orientation tweaks
-        "[data-orientation='vertical']]:wc-tab-trigger-vertical [data-orientation='vertical']]:w-full [data-orientation='vertical']]:min-w-[100px] [data-orientation='vertical']]:max-w-full [data-orientation='vertical']]:h-[38px] [data-orientation='vertical']]:min-h-[38px] [data-orientation='vertical']]:my-0 [data-orientation='vertical']]:mb-1 [data-orientation='vertical']]:sm:mb-[2px] [data-orientation='vertical']]:px-2 [data-orientation='vertical']]:text-xs [data-orientation='vertical']]:md:px-4 [data-orientation='vertical']]:md:text-base [data-orientation='vertical']]:lg:px-6 [data-orientation='vertical']]:lg:text-lg [data-orientation='vertical']]:text-left [data-orientation='vertical']]:justify-start [data-orientation='vertical']]:rounded-l-lg [data-orientation='vertical']]:border-l-4 [data-orientation='vertical']]:border-solid [data-orientation='vertical']]:border-transparent",
+        "data-[orientation='vertical']:wc-tab-trigger-vertical data-[orientation='vertical']:w-full data-[orientation='vertical']:min-w-[100px] data-[orientation='vertical']:max-w-full data-[orientation='vertical']:h-[38px] data-[orientation='vertical']:min-h-[38px] data-[orientation='vertical']:my-0 data-[orientation='vertical']:mb-1 data-[orientation='vertical']:sm:mb-[2px] data-[orientation='vertical']:px-2 data-[orientation='vertical']:text-xs data-[orientation='vertical']:md:px-4 data-[orientation='vertical']:md:text-base data-[orientation='vertical']:lg:px-6 data-[orientation='vertical']:lg:text-lg data-[orientation='vertical']:text-left data-[orientation='vertical']:justify-start data-[orientation='vertical']:rounded-l-lg data-[orientation='vertical']:border-l-4 data-[orientation='vertical']:border-solid data-[orientation='vertical']:border-transparent",
         className
       )}
       disabled={disabled}
@@ -104,8 +104,7 @@ const TabsTrigger = React.forwardRef<React.ComponentRef<typeof RadixTabs.Trigger
     >
       <span className={cn(
         "tab-label relative z-2 truncate tab-label-base",
-        "[data-orientation='vertical']]:tab-label-vertical"
-      )}>
+        "data-[orientation='vertical']:tab-label-vertical"      )}>
         {children}
       </span>
       <span className="tab-burst" />
@@ -127,9 +126,9 @@ const TabsContent = React.forwardRef<
       "sm:p-4 sm:min-h-[180px]",
       "md:p-6 md:min-h-[220px]",
       "lg:p-20 lg:min-h-[360px]",
-	  "lg:data-orientation='vertical']]:w-[400px]",
+	    "lg:data-[orientation='vertical']:w-[400px]",
       // Allow responsive vertical orientation height
-      "[data-orientation='vertical']]:min-h-[140px] [data-orientation='vertical']]:h-auto",
+      "data-[orientation='vertical']:min-h-[140px] data-[orientation='vertical']:h-auto",      
       className
     )}
     {...props}
