@@ -2,6 +2,7 @@
   "title": "Components",
   "pages": [
     "index",
+    "accordion",
     "avatar",
     "badge",
     "button",
@@ -17,7 +18,6 @@
     "spinner",
     "tabs",
     "textarea",
-    "tooltip",
-    "accordion"
+    "tooltip"
   ]
 }
