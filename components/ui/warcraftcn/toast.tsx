@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { toast } from "sonner";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { cva } from "class-variance-authority";
 import { cn } from "@/lib/utils";
 import {
@@ -9,6 +9,8 @@ import {
   AlertTriangle,
   Info,
 } from "lucide-react";
+
+import "@/components/ui/warcraftcn/styles/warcraft.css";
 
 const SCROLL_THEMES = {
   default: {
@@ -197,7 +199,7 @@ const triggerScrollToast = ({
   toast.custom(
     (id) => (
       <ScrollToast
-        id={id as string}
+        id={String(id)}
         message={message}
         faction={faction}
         variant={variant}
