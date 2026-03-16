@@ -42,7 +42,17 @@ export default function Layout({ children }: LayoutProps<"/">) {
             <div className="mx-auto w-full max-w-[1400px] flex-1 border-r border-l">
               {children}
             </div>
-            <Toaster />
+            <Toaster
+              closeButton={false}
+              duration={10}
+              expand={false}
+              position="top-right"
+              richColors={false}
+              toastOptions={{
+                className: "scroll-toast-wrapper",
+              }}
+              visibleToasts={5}
+            />
             <Analytics />
           </RootProvider>
         </ThemeProvider>

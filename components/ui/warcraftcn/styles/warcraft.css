@@ -926,3 +926,57 @@
   text-align: left;
   width: 100%;
 }
+
+ .scroll-handle-default {
+   background-image: url('../assets/toast/scroll-handle.png');
+   background-size: 100% 100%;
+ }
+
+ .scroll-handle-human {
+   background-image: url('../assets/toast/scroll-handle-human.png');
+   background-size: 100% 100%;
+ }
+
+ .scroll-handle-undead {
+   background-image: url('../assets/toast/scroll-handle-undead.png');
+   background-size: 100% 100%;
+ }
+
+ .scroll-handle-orc {
+   background-image: url('../assets/toast/scroll-handle-orc.png');
+   background-size: 100% 100%;
+ }
+
+ .scroll-handle-elf {
+   background-image: url('../assets/toast/scroll-handle-elf.png');
+   background-size: 100% 100%;
+ }
+
+ .scroll-handle-flip {
+   transform: scaleX(-1);
+ }
+
+ .scroll-center-default {
+   background-image: url('../assets/toast/scroll-content.webp');
+   background-size: 100% 100%;
+ }
+
+ .scroll-center-human {
+   background-image: url('../assets/toast/scroll-content-human.webp');
+   background-size: 100% 100%;
+ }
+
+ .scroll-center-undead {
+   background-image: url('../assets/toast/scroll-content-undead.webp');
+   background-size: 100% 100%;
+ }
+
+ .scroll-center-orc {
+   background-image: url('../assets/toast/scroll-content-orc.webp');
+   background-size: 100% 100%;
+ }
+
+ .scroll-center-elf {
+   background-image: url('../assets/toast/scroll-content-elf.webp');
+   background-size: 100% 100%;
+ }

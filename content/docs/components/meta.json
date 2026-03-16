@@ -18,6 +18,7 @@
     "spinner",
     "tabs",
     "textarea",
+    "toast",
     "tooltip"
   ]
 }
