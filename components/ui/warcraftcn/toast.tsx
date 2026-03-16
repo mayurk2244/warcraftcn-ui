@@ -96,7 +96,13 @@ type ToastPosition =
 
 interface ScrollToastProps {
   id: string;
-  message: string;
+  title?: string;
+  description?: string;
+  message?: string;
+  durationMs: number;
+  actionLabel?: string;
+  onAction?: () => void;
+  dismissible?: boolean;
   faction?: ScrollFaction;
   variant?: ToastVariant;
 }
@@ -104,6 +110,7 @@ interface ScrollToastProps {
 const ScrollToast: React.FC<ScrollToastProps> = ({
   id,
   message,
+  durationMs,
   faction = "default",
   variant = "default",
 }) => {
@@ -123,12 +130,14 @@ const ScrollToast: React.FC<ScrollToastProps> = ({
   }, [variant]);
 
   useEffect(() => {
-    const timers: NodeJS.Timeout[] = [];
-    timers.push(setTimeout(() => setPhase(1), 600));
-    timers.push(setTimeout(() => setPhase(2), 3800));
-    timers.push(setTimeout(() => toast.dismiss(id), 4800));
+    const ENTER_MS = 600;
+    const EXIT_MS = Math.max(ENTER_MS + 200, durationMs - 1200);
+    const timers: Array<ReturnType<typeof setTimeout>> = [];
+    timers.push(setTimeout(() => setPhase(1), ENTER_MS));
+    timers.push(setTimeout(() => setPhase(2), EXIT_MS));
+    timers.push(setTimeout(() => toast.dismiss(id), durationMs));
     return () => timers.forEach(clearTimeout);
-  }, [id]);
+  }, [id, durationMs]);
 
   return (
     <div className={cn("w-[300px] h-28 relative mx-auto pointer-events-auto flex justify-center")}>
@@ -184,7 +193,13 @@ const ScrollToast: React.FC<ScrollToastProps> = ({
 };
 
 type TriggerOptions = {
+  title?: string;
+  description?: string;
   message?: string;
+  durationMs?: number;
+  actionLabel?: string;
+  onAction?: () => void;
+  dismissible?: boolean;
   faction?: ScrollFaction;
   position?: ToastPosition;
   variant?: ToastVariant;
@@ -192,6 +207,7 @@ type TriggerOptions = {
 
 const triggerScrollToast = ({
   message = "",
+  durationMs = 5000,
   faction,
   position = "top-center",
   variant = "default",
@@ -201,12 +217,13 @@ const triggerScrollToast = ({
       <ScrollToast
         id={String(id)}
         message={message}
+        durationMs={durationMs}
         faction={faction}
         variant={variant}
       />
     ),
     {
-      duration: 5000,
+      duration: durationMs,
       position,
     }
   );
