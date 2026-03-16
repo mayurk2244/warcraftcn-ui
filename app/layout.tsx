@@ -43,7 +43,6 @@ export default function Layout({ children }: LayoutProps<"/">) {
             </div>
             <Toaster
               closeButton={false}
-              duration={10_000}
               expand={false}
               position="top-right"
               richColors={false}

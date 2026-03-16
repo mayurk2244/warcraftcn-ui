@@ -206,7 +206,7 @@ const triggerScrollToast = ({
       />
     ),
     {
-      duration: Infinity,
+      duration: 5000,
       position,
     }
   );
