@@ -110,10 +110,9 @@ const ToastExample = () => {
         <div
             className="w-[90vw] md:w-full md:p-2 p-8"
             style={{
-                backgroundImage: "url('../../warcraftcn/textarea-bg.webp')",
+                backgroundImage: "url('/warcraftcn/textarea-bg.webp')",
                 backgroundSize: "100% 100%"
-            }}
-        >
+            }}        >
             <div className="flex flex-col gap-6 p-4 sm:p-10">
                 <fieldset className="mb-2 sm:mb-6">
                     <legend className="font-semibold mb-2 sm:mb-3 text-white">Faction</legend>
@@ -124,8 +123,8 @@ const ToastExample = () => {
                         <div className="flex flex-col lg:flex-row items-start lg:items-center gap-2 lg:gap-4">
                             {factions.map((f) => (
                                 <div className="flex items-center gap-2" key={f.value}>
-                                    <RadioGroupItem value={f.value} id={f.value} />
-                                    <Label htmlFor={f.value}>{f.label}</Label>
+                                    <RadioGroupItem value={f.value} id={`faction-${f.value}`} />
+                                    <Label htmlFor={`faction-${f.value}`}>{f.label}</Label>
                                 </div>
                             ))}
                         </div>
@@ -141,8 +140,8 @@ const ToastExample = () => {
                         <div className="flex flex-col lg:flex-row items-start lg:items-center gap-2 lg:gap-4">
                             {positions.map((pos) => (
                                 <div className="flex items-center gap-2" key={pos.value}>
-                                    <RadioGroupItem value={pos.value} id={pos.value} />
-                                    <Label htmlFor={pos.value}>{pos.label}</Label>
+                                    <RadioGroupItem value={pos.value} id={`position-${pos.value}`} />
+                                    <Label htmlFor={`position-${pos.value}`}>{pos.label}</Label>
                                 </div>
                             ))}
                         </div>
@@ -158,8 +157,8 @@ const ToastExample = () => {
                         <div className="flex flex-col lg:flex-row items-start lg:items-center gap-2 lg:gap-4">
                             {variants.map((v) => (
                                 <div className="flex items-center gap-2" key={v.value}>
-                                    <RadioGroupItem value={v.value} id={v.value} />
-                                    <Label htmlFor={v.value}>{v.label}</Label>
+                                    <RadioGroupItem value={v.value} id={`variant-${v.value}`} />
+                                    <Label htmlFor={`variant-${v.value}`}>{v.label}</Label>
                                 </div>
                             ))}
                         </div>

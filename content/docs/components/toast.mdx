@@ -19,12 +19,14 @@ pnpm dlx shadcn@latest add https://warcraftcn.com/r/toast.json
 import { triggerScrollToast } from "@/components/ui/warcraftcn/toast";
 import { Button } from "@/components/ui/warcraftcn/button";
 
-export default function ToastExample () {
+export default function ToastExample() {
   return (
-     <Button variant="frame" onClick={ triggerScrollToast({
-            message:"This is test"
-        });} className="w-[200px] md:min-w-xs py-3 px-6">
-        Show Toast
+    <Button
+        variant="frame"
+        onClick={() => triggerScrollToast({ message: "This is test" })}
+        className="w-[200px] md:min-w-xs py-3 px-6"
+    >
+      Show Toast
     </Button>
   );
 }

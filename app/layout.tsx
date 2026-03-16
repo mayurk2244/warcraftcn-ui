@@ -38,13 +38,12 @@ export default function Layout({ children }: LayoutProps<"/">) {
             }}
           >
             <SiteHeader />
-
             <div className="mx-auto w-full max-w-[1400px] flex-1 border-r border-l">
               {children}
             </div>
             <Toaster
               closeButton={false}
-              duration={10}
+              duration={10_000}
               expand={false}
               position="top-right"
               richColors={false}
